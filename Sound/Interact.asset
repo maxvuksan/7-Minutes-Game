@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Interact
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clips: []
-    volume: 0
-    pitch: 0
+  - name: WalkieDialogue
+    clips:
+    - {fileID: 8300000, guid: ffd86c2b7ea6fb848bef9ebd9111f0fb, type: 3}
+    volume: 0.099
+    pitch: 1.6
     pitch_variation: 0
     spatial: 0
     min_distance: 0

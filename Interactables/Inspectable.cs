@@ -7,6 +7,7 @@ public class Inspectable : Interactable
     public Transform targetTransform;
     public Vector3 inspectedRotation;
 
+    public bool isInspecting = false;
     public float distanceFromCamera = 0.5f; // how far is the object from players face
 
     void Start()
@@ -16,6 +17,8 @@ public class Inspectable : Interactable
 
 
     public override void OnInteract(InteractionManager interactionManager){
+
+        isInspecting = true;
         
         HeadMovement.SetDisableMovement(true);
         InteractionManager.SetShouldPanAnchor(true);
@@ -31,6 +34,8 @@ public class Inspectable : Interactable
 
 
     public override void EndPersistentInteraction(InteractionManager interactionManager){
+
+        isInspecting = false;
 
         HeadMovement.SetDisableMovement(false);
         InteractionManager.SetShouldPanAnchor(false);

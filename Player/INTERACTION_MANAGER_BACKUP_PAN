@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
@@ -19,6 +20,10 @@ public class InteractionManager : MonoBehaviour
     private Interactable currentInteraction;
 
     static bool shouldPanAnchor;
+
+    Vector3 initalMousePosition; // recorded on input
+    Quaternion initalInspectedLocalRotation; // objects recorded local rotation
+    Quaternion finalInspectedLocalRotation;
     
 
     // when inspecting
@@ -27,6 +32,8 @@ public class InteractionManager : MonoBehaviour
 
         if(!state){
             instance.inspectionTransform.localRotation = Quaternion.Euler(0,0,0);
+
+            //HeadMovement.SetRotation()
         }
     }
 
@@ -45,25 +52,38 @@ public class InteractionManager : MonoBehaviour
     private void Update() {
 
         if(shouldPanAnchor){
-            Vector3 mousePosition = Input.mousePosition;
 
-            float normalizedX = (mousePosition.x / Screen.width) * 2 - 1;
-            float normalizedY = (mousePosition.y / Screen.height) * 2 - 1;
+            if(Input.GetMouseButtonDown((int)MouseButton.Left)){
+                initalMousePosition = Input.mousePosition;
+                initalInspectedLocalRotation = instance.inspectionTransform.localRotation;
+            }
+            else if(Input.GetMouseButton((int)MouseButton.Left)){   // do transformations in realtime
 
-            instance.inspectionTransform.localRotation = Quaternion.Euler(normalizedY * 10, normalizedX * -10,0);
+                float normalizedX = (Input.mousePosition.x / Screen.width) * 2 - 1;
+                float normalizedY = (Input.mousePosition.y / Screen.height) * 2 - 1;
 
+                float initNormalizedX = (initalMousePosition.x / Screen.width) * 2 - 1;
+                float initNormalizedY = (initalMousePosition.y / Screen.height) * 2 - 1;
+
+                float difX = normalizedX - initNormalizedX;
+                float difY = normalizedY - initNormalizedY;
+
+                // Handle the horizontal (yaw) rotation for the player body
+                instance.inspectionTransform.Rotate(Vector3.up, difX * 100, Space.World); // Apply yaw to the body
+
+                // Handle the vertical (pitch) rotation for the inspected object
+                float newRotationX = Mathf.Clamp(initalInspectedLocalRotation.eulerAngles.x - difY * 100, -85f, 85f); // Apply pitch with clamping
+                instance.inspectionTransform.localRotation = Quaternion.Euler(newRotationX, initalInspectedLocalRotation.eulerAngles.y, 0f); // Apply pitch to the inspected object
+
+                finalInspectedLocalRotation = instance.inspectionTransform.localRotation; // Store final rotation
+            }
+            if(Input.GetMouseButtonUp((int)MouseButton.Left)){   // apply transformations
+                instance.inspectionTransform.localRotation = Quaternion.Euler(finalInspectedLocalRotation.eulerAngles);
+            }
         
-            //HeadMovement.rotationOffsetX = Mathf.Lerp(HeadMovement.rotationOffsetX, -normalizedY * 1.0f, 0.2f);
-            //HeadMovement.rotationOffsetY = Mathf.Lerp(HeadMovement.rotationOffsetY, normalizedX * 1.0f, 0.2f);     
-
             
         }
-        else{
-                    
-           // HeadMovement.rotationOffsetX = 0; Mathf.Lerp(HeadMovement.rotationOffsetX, 0, 0.1f);
-            //HeadMovement.rotationOffsetY = 0; Mathf.Lerp(HeadMovement.rotationOffsetY, 0, 0.1f);    
-        }
-        
+
 
         if(currentInteraction == null){
             InteractionDetection();

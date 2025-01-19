@@ -7,6 +7,8 @@ public class Inspectable : Interactable
     public Transform targetTransform;
     public Vector3 inspectedRotation;
 
+    public float distanceFromCamera = 0.5f; // how far is the object from players face
+
     void Start()
     {
         originalTransform = transform;
@@ -17,6 +19,8 @@ public class Inspectable : Interactable
         
         HeadMovement.SetDisableMovement(true);
         InteractionManager.SetShouldPanAnchor(true);
+
+        interactionManager.inspectionTransform.localPosition = new Vector3(0, 0, distanceFromCamera);
 
         inspectableItem.transform.parent = interactionManager.inspectionTransform;
 

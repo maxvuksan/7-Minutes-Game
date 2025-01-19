@@ -15,6 +15,9 @@ public class Inspectable : Interactable
 
     public override void OnInteract(InteractionManager interactionManager){
         
+        HeadMovement.SetDisableMovement(true);
+        InteractionManager.SetShouldPanAnchor(true);
+
         inspectableItem.transform.parent = interactionManager.inspectionTransform;
 
         targetTransform.transform.parent = interactionManager.inspectionTransform;
@@ -24,6 +27,9 @@ public class Inspectable : Interactable
 
 
     public override void EndPersistentInteraction(InteractionManager interactionManager){
+
+        HeadMovement.SetDisableMovement(false);
+        InteractionManager.SetShouldPanAnchor(false);
 
         inspectableItem.transform.parent = originalTransform;
 

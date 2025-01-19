@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,7 +14,23 @@ public class InteractionManager : MonoBehaviour
     public Transform inspectionTransform;
     public Animator crosshairAnimator;
 
+    static InteractionManager instance;
+
     private Interactable currentInteraction;
+
+    static bool shouldPanAnchor;
+    
+
+    // when inspecting
+    public static void SetShouldPanAnchor(bool state){
+        shouldPanAnchor = state;
+
+        if(!state){
+            instance.inspectionTransform.localRotation = Quaternion.Euler(0,0,0);
+
+            //HeadMovement.SetRotation()
+        }
+    }
 
 
     void OnDrawGizmos()
@@ -23,7 +40,35 @@ public class InteractionManager : MonoBehaviour
     }
 
 
-    void Update(){
+    void Start(){
+        instance = this;
+    }
+
+    private void FixedUpdate() {
+
+        if(shouldPanAnchor){
+            Vector3 mousePosition = Input.mousePosition;
+
+            float normalizedX = (mousePosition.x / Screen.width) * 2 - 1;
+            float normalizedY = (mousePosition.y / Screen.height) * 2 - 1;
+
+            instance.inspectionTransform.localRotation = Quaternion.Euler(normalizedY * 45, normalizedX * -45,0);
+
+        
+            HeadMovement.rotationOffsetX = Mathf.Lerp(HeadMovement.rotationOffsetX, -normalizedY * 3.0f, 0.2f);
+            HeadMovement.rotationOffsetY = Mathf.Lerp(HeadMovement.rotationOffsetY, normalizedX * 3.0f, 0.2f);     
+
+            
+        }
+        else{
+                    
+            HeadMovement.rotationOffsetX = 0; Mathf.Lerp(HeadMovement.rotationOffsetX, 0, 0.2f);
+            HeadMovement.rotationOffsetY = 0; Mathf.Lerp(HeadMovement.rotationOffsetY, 0, 0.2f);    
+        }
+    }
+
+    private void Update(){
+        
 
         if(currentInteraction == null){
             InteractionDetection();

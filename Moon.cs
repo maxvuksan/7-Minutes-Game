@@ -11,12 +11,11 @@ public class Moon : MonoBehaviour
 
     public float globalRotationSpeed;
     public float globalRotationScaler = 0.995f; // scales each frame
-    public AudioSource impactAudio;
     public AnimationCurve cameraShakeCurve;
+
     
     public void FixedUpdate() {
         
-
         globalRotationSpeed *= globalRotationScaler;
     }
 
@@ -25,11 +24,11 @@ public class Moon : MonoBehaviour
     }
 
     public void TriggerImpactAudio(){
-        impactAudio.Play();
+        GetComponent<AudioSource>().Play();
     }
 
     public void BeginCameraShake(){
-        
+
     }
 
 

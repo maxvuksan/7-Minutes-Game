@@ -26,7 +26,9 @@ public class HeadMovement : MonoBehaviour
             Cursor.visible = true; // Hide the cursor
         }
         else{
+            Cursor.lockState = CursorLockMode.Locked; 
             Cursor.visible = false; // Hide the cursor
+            
         }
     }
     public static void SetRotation(float rX, float rY){

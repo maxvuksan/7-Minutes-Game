@@ -191,5 +191,9 @@ MonoBehaviour:
   inspectableItem: {fileID: 2994214082280725157}
   targetTransform: {fileID: 7631856750776906166}
   inspectedRotation: {x: 0, y: -180, z: -180}
+  lowdetailMesh: {fileID: 4909758370108187771, guid: 4bb951ed7d76ed24aabd6034f687e0d5, type: 3}
   isInspecting: 0
-  distanceFromCamera: 0.5
+  distanceFromCamera: 0.73
+  canZoom: 1
+  distanceFromCameraWhenZooming: 0.3
+  zoomMovementScaler: 0.7

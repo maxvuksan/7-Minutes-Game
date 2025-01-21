@@ -100,12 +100,12 @@ TextureImporter:
       name: crosshair_0
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 0
-        width: 21
+        width: 20
         height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.475, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -122,12 +122,12 @@ TextureImporter:
       name: crosshair_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 20
         y: 0
-        width: 52
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.40289545, y: 0.7065677}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: crosshair_2
       rect:
         serializedVersion: 2
-        x: 19
+        x: 40
         y: 0
-        width: 21
+        width: 20
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.58474576, y: 0.5918079}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,6 +158,28 @@ TextureImporter:
       bones: []
       spriteID: 8b5d8209333e9724195720afdcce8791
       internalID: 45592235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crosshair_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.54001886, y: 0.37994355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5c97ae7a7beec4d8c3c073a0a54cdb
+      internalID: -1422029485
       vertices: []
       indices: 
       edges: []
@@ -179,6 +201,7 @@ TextureImporter:
       crosshair_0: 325967770
       crosshair_1: -179750068
       crosshair_2: 45592235
+      crosshair_3: -1422029485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

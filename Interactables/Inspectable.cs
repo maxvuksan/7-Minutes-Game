@@ -42,6 +42,13 @@ public class Inspectable : Interactable
             inspectableItemMeshFilter.mesh = highdetailMesh;
 
         }
+
+        if(canZoom){
+            FindAnyObjectByType<Crosshair>().SetCrosshairType(Crosshair.Type.ZOOM);
+        }
+        else{
+            FindAnyObjectByType<Crosshair>().SetCrosshairType(Crosshair.Type.OPEN_HAND);
+        }
         
         HeadMovement.SetDisableMovement(true);
         InteractionManager.SetShouldPanAnchor(true);

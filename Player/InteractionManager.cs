@@ -12,7 +12,7 @@ public class InteractionManager : MonoBehaviour
     public TextMeshProUGUI interactionText;
 
     public Transform inspectionTransform;
-    public Animator crosshairAnimator;
+    public Crosshair crosshair;
 
     static InteractionManager instance;
 
@@ -46,7 +46,7 @@ public class InteractionManager : MonoBehaviour
 
         if(shouldPanAnchor){
             Vector3 mousePosition = Input.mousePosition;
-            crosshairAnimator.gameObject.GetComponent<RectTransform>().position = Vector3.Lerp(crosshairAnimator.gameObject.GetComponent<RectTransform>().position, mousePosition, 0.3f);
+            crosshair.gameObject.GetComponent<RectTransform>().position = mousePosition;
 
             float normalizedX = (mousePosition.x / Screen.width) * 2 - 1;
             float normalizedY = (mousePosition.y / Screen.height) * 2 - 1;
@@ -60,13 +60,14 @@ public class InteractionManager : MonoBehaviour
             
         }
         else{
-                    
+            crosshair.gameObject.GetComponent<RectTransform>().position = new Vector3(0,0);   
            // HeadMovement.rotationOffsetX = 0; Mathf.Lerp(HeadMovement.rotationOffsetX, 0, 0.1f);
             //HeadMovement.rotationOffsetY = 0; Mathf.Lerp(HeadMovement.rotationOffsetY, 0, 0.1f);    
         }
         
 
         if(currentInteraction == null){
+            crosshair.SetCrosshairType(Crosshair.Type.DEFAULT);
             InteractionDetection();
         }
         else{
@@ -74,7 +75,7 @@ public class InteractionManager : MonoBehaviour
 
             // exit interaction
 
-            if(Input.GetKey(KeyCode.Escape)){
+            if(Input.GetKeyDown(KeyCode.E)){
                 currentInteraction.EndPersistentInteraction(this);
                 currentInteraction = null;
             }
@@ -87,8 +88,6 @@ public class InteractionManager : MonoBehaviour
         RaycastHit hit;
         
         if(Physics.Raycast(ray, out hit, interactionRange, interactableLayer)){
-
-            crosshairAnimator.SetBool("Hovered", true);
 
             Interactable inter = hit.collider.gameObject.GetComponent<Interactable>();
 
@@ -118,7 +117,6 @@ public class InteractionManager : MonoBehaviour
 
         }
         else{
-            crosshairAnimator.SetBool("Hovered", false);
             interactionText.text = "";
         }
     }

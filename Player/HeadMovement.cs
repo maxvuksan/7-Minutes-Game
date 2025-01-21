@@ -23,7 +23,7 @@ public class HeadMovement : MonoBehaviour
         
         if(state){
             Cursor.lockState = CursorLockMode.Confined; // Lock cursor to center of the screen
-            Cursor.visible = true; // Hide the cursor
+            Cursor.visible = false; // Hide the cursor
         }
         else{
             Cursor.lockState = CursorLockMode.Locked; 

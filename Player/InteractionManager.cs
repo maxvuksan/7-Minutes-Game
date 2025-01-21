@@ -46,6 +46,7 @@ public class InteractionManager : MonoBehaviour
 
         if(shouldPanAnchor){
             Vector3 mousePosition = Input.mousePosition;
+            crosshairAnimator.gameObject.GetComponent<RectTransform>().position = Vector3.Lerp(crosshairAnimator.gameObject.GetComponent<RectTransform>().position, mousePosition, 0.3f);
 
             float normalizedX = (mousePosition.x / Screen.width) * 2 - 1;
             float normalizedY = (mousePosition.y / Screen.height) * 2 - 1;

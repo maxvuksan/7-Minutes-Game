@@ -4135,16 +4135,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1784592050133743073, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
-      propertyPath: inspectedRotation.x
-      value: 0
+      propertyPath: distanceFromCamera
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 1784592050133743073, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: inspectedRotation.y
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784592050133743073, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
-      propertyPath: inspectedRotation.z
-      value: -85
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1802290473267162780, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_Name

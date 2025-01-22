@@ -103,7 +103,6 @@ public class InteractionManager : MonoBehaviour
                         inter.OnInteract();
                         inter.OnInteract(this);
 
-
                         if(inter.persistentInteraction){
                             // hold onto interaction
                             currentInteraction = inter;

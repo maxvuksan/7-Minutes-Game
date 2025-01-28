@@ -14,14 +14,31 @@ public class Crosshair : MonoBehaviour
     }
 
     public Sprite[] crosshairSprites;
+    private ControlPointTracker controlPointTracker;
+    Type type;
 
     void Awake(){
         SetCrosshairType(Type.DEFAULT);
     }
 
-    public void SetCrosshairType(Type type){
+    void Start(){
+        controlPointTracker = FindObjectOfType<ControlPointTracker>();
+    }
 
-        GetComponentInChildren<UnityEngine.UI.Image>().sprite = crosshairSprites[(int)type];
+    public void SetCrosshairType(Type _type){
+
+        type = _type;
+
+    }
+
+    public void Update(){
+        
+        if(controlPointTracker.IsMouseHoveringControlPoint()){
+            GetComponentInChildren<UnityEngine.UI.Image>().sprite = crosshairSprites[(int)Type.POINTER];
+        }
+        else{
+            GetComponentInChildren<UnityEngine.UI.Image>().sprite = crosshairSprites[(int)type];
+        }
     }
 
 }

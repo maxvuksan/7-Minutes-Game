@@ -69,8 +69,10 @@ public class InteractionManager : MonoBehaviour
         if(currentInteraction == null){
             crosshair.SetCrosshairType(Crosshair.Type.DEFAULT);
             InteractionDetection();
+
         }
         else{
+
             interactionText.text = "";
 
             // exit interaction
@@ -80,6 +82,9 @@ public class InteractionManager : MonoBehaviour
                 currentInteraction = null;
             }
         }
+
+        ControlPointTracker.Singleton.UpdateControlPoints(currentInteraction);
+
     }
 
     void InteractionDetection(){

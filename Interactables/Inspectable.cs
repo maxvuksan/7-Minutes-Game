@@ -22,12 +22,16 @@ public class Inspectable : Interactable
 
     void Start()
     {
-        highdetailMesh = GetComponentInChildren<MeshFilter>().mesh;
+
+        inspectableItemMeshFilter = inspectableItem.GetComponent<MeshFilter>();
+
+        if(inspectableItemMeshFilter != null){
+            highdetailMesh = GetComponentInChildren<MeshFilter>().mesh;
+        }
 
         if(lowdetailMesh != null){
             inspectableItem.GetComponent<MeshFilter>().mesh = lowdetailMesh;
         }
-        inspectableItemMeshFilter = inspectableItem.GetComponent<MeshFilter>();
 
         originalTransform = transform;
         currDistance = distanceFromCamera;

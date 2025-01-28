@@ -22,3 +22,12 @@ MonoBehaviour:
     spatial: 0
     min_distance: 0
     max_distance: 0
+  - name: ControlBeep
+    clips:
+    - {fileID: 8300000, guid: d00153f372e3f064791bd387bc0c395e, type: 3}
+    volume: 0.709
+    pitch: 1
+    pitch_variation: 0
+    spatial: 0
+    min_distance: 0
+    max_distance: 0

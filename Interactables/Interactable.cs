@@ -12,6 +12,7 @@ public class Interactable : MonoBehaviour
     public bool persistentInteraction = true;   // does the interaction persist after OnInteract() ?
     [HideInInspector] public bool interactionEnabled = true;
 
+    public InspectionControl[] controls; // can be empty
 
     // should be overridden to provide interaction logic
     public virtual void OnInteract(){

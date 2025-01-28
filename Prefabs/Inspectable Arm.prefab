@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 4495080332726122225}
   - component: {fileID: 6996880661781711016}
   - component: {fileID: 1153777090179937077}
+  - component: {fileID: 5764105644711134890}
   m_Layer: 6
   m_Name: Inspectable Arm
   m_TagString: Untagged
@@ -306,6 +307,7 @@ MonoBehaviour:
   label: Grab Limb
   persistentInteraction: 1
   interactionEnabled: 1
+  controls: []
   inspectableItem: {fileID: 3074860844729609527}
   targetTransform: {fileID: 1316887242242587590}
   inspectedRotation: {x: 53, y: 17, z: -85}
@@ -315,6 +317,28 @@ MonoBehaviour:
   canZoom: 0
   distanceFromCameraWhenZooming: 0.5
   zoomMovementScaler: 1.3
+--- !u!95 &5764105644711134890
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215456015907649747}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8999465306041611664
 GameObject:
   m_ObjectHideFlags: 0

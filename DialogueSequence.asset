@@ -16,107 +16,245 @@ MonoBehaviour:
   - bursts:
     - content: Agent Sentinel,
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' please report in.'
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' We have an urgent job for you.'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: Agent Sentinel,
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' I repeat we have an urgent job for you'
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: Agent Sentinel,
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' I repeat for the last time we have a job that requires immediate
         attention.'
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: Agent Sentinel?
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' Hello, are you there?'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
-    - content: Sorry Senti~
+    - content: Is it still not responding?
       timeDelayUntilActive: 0
-    - content: "Marcus\u2026"
-      timeDelayUntilActive: 1
-    - content: I wish we could have treated you better.
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4342527
+    - content: " No\u2026"
       timeDelayUntilActive: 2
-    - content: "But\u2026"
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
+    - content: ' Give it here.'
       timeDelayUntilActive: 2
-    - content: "maybe that\u2019s just hindsight. Good bye. "
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
+    - content: ' AGENT SENTINEL,'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
+    - content: ' REPORT IN AT ONCE'
+      timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
     - content: "Sigh\u2026"
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' Sentinel this is no time for jokes.'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: " Earth\u2019s future is at stake here."
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
     - content: God dammit REPORT IN!
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' I KNOW YOU CAN HEAR ME!'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' I CAN SEE YOUR NOISE GRAPH! '
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
     - content: "Shit\u2026"
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: " it\u2019s not responding."
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' Well why would he,'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: " you\u2019re just yelling at him."
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: "Uh\u2026"
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: " Agent Sentinel please can you report in\u2026"
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: " I\u2019m afraid we can\u2019t handle this one on our own. "
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: I mean,
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: " we\u2019re talking about the destruction of our planet\u2026"
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' and everyone on it.'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
   - bursts:
     - content: Can we at least know wh~
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
     - content: ' SENTINEL I SWEAR TO GOD! '
       timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' YOU CALL YOUR ASS IN NOW!'
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
     - content: 'SHIT! SHIT! SHIT! '
       timeDelayUntilActive: 0
-    - content: "Sentinel where do you get off\u2026"
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
+    - content: " Sentinel where do you get off\u2026"
       timeDelayUntilActive: 2
-    - content: 'PLEASE JUST SHOOT THE MOON! '
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
+    - content: ' PLEASE JUST SHOOT THE MOON! '
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
     - content: SHIT!
       timeDelayUntilActive: 0
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' Margaret, '
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: " get my wife and kids on the line\u2026"
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: " I\u2019d recommend you all do the same\u2026"
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
     - content: ' FUCK! '
       timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 4408319
   - bursts:
-    - content: SHIT!
+    - content: Sorry Senti~
       timeDelayUntilActive: 0
-    - content: ' Margaret, '
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
+    - content: " Marcus\u2026"
+      timeDelayUntilActive: 1
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
+    - content: ' I wish we could have treated you better.'
       timeDelayUntilActive: 2
-    - content: " I\u2019d recommend you all do the same\u2026"
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
+    - content: " But\u2026"
       timeDelayUntilActive: 2
-    - content: ' FUCK! '
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428
+    - content: " maybe that\u2019s just hindsight. Good bye. "
       timeDelayUntilActive: 2
-    - content: ' FUCK! '
-      timeDelayUntilActive: 2
+      dialogueColor:
+        serializedVersion: 2
+        rgba: 5701428

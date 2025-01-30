@@ -4025,7 +4025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: lineDelay
-      value: 60
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: background
@@ -4033,11 +4033,11 @@ PrefabInstance:
       objectReference: {fileID: 236506360}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: initialDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: disapearDelay
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6716331668288778969, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_AnchoredPosition.y

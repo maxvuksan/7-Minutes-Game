@@ -66,12 +66,10 @@ public class ConversationManager : MonoBehaviour
     void Step(){
         
         if(burstIndex == 0 && charIndex == 0){
-            currentLine = "";
+            currentLine = "<color=#" + ColorUtility.ToHtmlStringRGB(activeSequence.lines[lineIndex].bursts[burstIndex].dialogueColor) + ">";
         }
 
         currentLine += activeSequence.lines[lineIndex].bursts[burstIndex].content[charIndex];
-
-        
 
         charIndex++;
 
@@ -93,6 +91,7 @@ public class ConversationManager : MonoBehaviour
 
             }
             else{
+                currentLine += "<color=#" + ColorUtility.ToHtmlStringRGB(activeSequence.lines[lineIndex].bursts[burstIndex].dialogueColor) + ">";
                 characterDelayTracked -= activeSequence.lines[lineIndex].bursts[burstIndex].timeDelayUntilActive; // add burst delay
             }
         }

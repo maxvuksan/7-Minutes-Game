@@ -6,8 +6,8 @@ public class HeadMovement : MonoBehaviour
     public float mouseSensitivity = 100f; // Sensitivity of the mouse movement
     public float clampAngle = 85f; // Maximum angle for vertical head movement
 
-    private static float rotX = 0f; // Initialize the vertical rotation
-    private static float rotY = 0f;
+    private static float rotX = -10f; // Initialize the vertical rotation
+    private static float rotY = 180f;
 
     public static float rotationOffsetX;
     public static float rotationOffsetY;
@@ -31,10 +31,17 @@ public class HeadMovement : MonoBehaviour
             
         }
     }
-    public static void SetRotation(float rX, float rY){
+    public void SetRotation(float rX, float rY){
         rotX = rX;
         rotY = rY;
     }
+
+    public void MoonCrashEnding() {
+        rotX = -10;
+        rotY = 180;
+        SetDisableMovement(true);
+    }
+
 
     public static bool GetDisableMovement(){
         return disableMovement;

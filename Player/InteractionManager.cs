@@ -87,6 +87,11 @@ public class InteractionManager : MonoBehaviour
 
     }
 
+    public void EndInteraction() {
+        currentInteraction.EndPersistentInteraction(this);
+        currentInteraction = null;
+    }
+
     void InteractionDetection(){
 
         Ray ray = new Ray(transform.position, transform.forward);

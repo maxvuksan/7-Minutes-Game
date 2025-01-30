@@ -468,6 +468,11 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
+--- !u!224 &236506360 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 428632071993415522, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &303192029
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,6 +4022,22 @@ PrefabInstance:
     - target: {fileID: 6162774889409408119, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_Name
       value: Inspectable Wallet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: lineDelay
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 236506360}
+    - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: initialDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: disapearDelay
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6716331668288778969, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_AnchoredPosition.y

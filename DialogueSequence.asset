@@ -14,17 +14,109 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - bursts:
-    - content: Hello sir...
+    - content: Agent Sentinel,
       timeDelayUntilActive: 0
-    - content: is this reaching you?
+    - content: ' please report in.'
+      timeDelayUntilActive: 1
+    - content: ' We have an urgent job for you.'
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: Agent Sentinel,
+      timeDelayUntilActive: 0
+    - content: ' I repeat we have an urgent job for you'
       timeDelayUntilActive: 1
   - bursts:
-    - content: 'SHOOT THE MOON, '
+    - content: Agent Sentinel,
       timeDelayUntilActive: 0
-    - content: SHOOT THE MOON!
+    - content: ' I repeat for the last time we have a job that requires immediate
+        attention.'
       timeDelayUntilActive: 1
   - bursts:
-    - content: 'SHOOT THE MOON, '
+    - content: Agent Sentinel?
       timeDelayUntilActive: 0
-    - content: SHOOT THE MOON!
+    - content: ' Hello, are you there?'
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: Sorry Senti~
+      timeDelayUntilActive: 0
+    - content: "Marcus\u2026"
       timeDelayUntilActive: 1
+    - content: I wish we could have treated you better.
+      timeDelayUntilActive: 2
+    - content: "But\u2026"
+      timeDelayUntilActive: 2
+    - content: "maybe that\u2019s just hindsight. Good bye. "
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: "Sigh\u2026"
+      timeDelayUntilActive: 0
+    - content: ' Sentinel this is no time for jokes.'
+      timeDelayUntilActive: 2
+    - content: " Earth\u2019s future is at stake here."
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: God dammit REPORT IN!
+      timeDelayUntilActive: 0
+    - content: ' I KNOW YOU CAN HEAR ME!'
+      timeDelayUntilActive: 2
+    - content: ' I CAN SEE YOUR NOISE GRAPH! '
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: "Shit\u2026"
+      timeDelayUntilActive: 0
+    - content: " it\u2019s not responding."
+      timeDelayUntilActive: 2
+    - content: ' Well why would he,'
+      timeDelayUntilActive: 2
+    - content: " you\u2019re just yelling at him."
+      timeDelayUntilActive: 1
+  - bursts:
+    - content: "Uh\u2026"
+      timeDelayUntilActive: 0
+    - content: " Agent Sentinel please can you report in\u2026"
+      timeDelayUntilActive: 2
+    - content: " I\u2019m afraid we can\u2019t handle this one on our own. "
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: I mean,
+      timeDelayUntilActive: 0
+    - content: " we\u2019re talking about the destruction of our planet\u2026"
+      timeDelayUntilActive: 1
+    - content: ' and everyone on it.'
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: Can we at least know wh~
+      timeDelayUntilActive: 0
+    - content: ' SENTINEL I SWEAR TO GOD! '
+      timeDelayUntilActive: 1
+    - content: ' YOU CALL YOUR ASS IN NOW!'
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: 'SHIT! SHIT! SHIT! '
+      timeDelayUntilActive: 0
+    - content: "Sentinel where do you get off\u2026"
+      timeDelayUntilActive: 2
+    - content: 'PLEASE JUST SHOOT THE MOON! '
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: SHIT!
+      timeDelayUntilActive: 0
+    - content: ' Margaret, '
+      timeDelayUntilActive: 2
+    - content: " get my wife and kids on the line\u2026"
+      timeDelayUntilActive: 2
+    - content: " I\u2019d recommend you all do the same\u2026"
+      timeDelayUntilActive: 2
+    - content: ' FUCK! '
+      timeDelayUntilActive: 2
+  - bursts:
+    - content: SHIT!
+      timeDelayUntilActive: 0
+    - content: ' Margaret, '
+      timeDelayUntilActive: 2
+    - content: " I\u2019d recommend you all do the same\u2026"
+      timeDelayUntilActive: 2
+    - content: ' FUCK! '
+      timeDelayUntilActive: 2
+    - content: ' FUCK! '
+      timeDelayUntilActive: 2

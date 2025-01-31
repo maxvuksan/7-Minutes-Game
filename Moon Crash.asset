@@ -16,7 +16,7 @@ MonoBehaviour:
   - name: Explosion
     clips:
     - {fileID: 8300000, guid: f85313b334050264d94e77a9459b8bf5, type: 3}
-    volume: 1
+    volume: 0.684
     pitch: 1
     pitch_variation: 0
     spatial: 0

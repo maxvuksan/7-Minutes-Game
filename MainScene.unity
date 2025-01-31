@@ -9975,7 +9975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: lineDelay
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: background
@@ -9987,7 +9987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: initialDelay
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6458817821164844386, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: disapearDelay

@@ -43,5 +43,7 @@ public class MoonCrash : MonoBehaviour
 
         textObject.SetActive(false);
         canvas.SetActive(true);
+
+        
     }
 }

@@ -7381,7 +7381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extendArmAnimator: {fileID: 946444196}
-  armToHide: {fileID: 27944407}
+  objectsToHide:
+  - {fileID: 1730702211}
+  - {fileID: 27944407}
+  fadeOutAnim: {fileID: 880847672}
 --- !u!1 &1499782372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7958,6 +7961,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660276809}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1730702211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 895292163490110124, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1787707183 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2564608796665903796, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}

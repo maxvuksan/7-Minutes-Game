@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoonCrash : MonoBehaviour
 {
@@ -44,6 +45,6 @@ public class MoonCrash : MonoBehaviour
         textObject.SetActive(false);
         canvas.SetActive(true);
 
-        
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -10,6 +10,15 @@ public class Radio : MonoBehaviour
 
     private float timePassed = 0;
 
+    private void Awake() {
+        foreach (AudioClip clip in soundLoops) {
+            source.clip = clip;
+            source.Play();
+        }   
+
+        source.Pause();
+    }
+
     private void Update() {
         timePassed += Time.deltaTime;
     }
@@ -30,7 +39,7 @@ public class Radio : MonoBehaviour
 
     public void PowerButton() {
         if (isOn) {
-            source.Stop();
+            source.Pause();
             isOn = false;
         } else {
             source.time = timePassed % source.clip.length;

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSceneAfterTime: 1
-  timeUntilSwitch: 18
+  timeUntilSwitch: 14.5
   sceneName: MainScene
 --- !u!4 &1417752518
 Transform:

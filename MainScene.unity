@@ -613,6 +613,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303192029}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &400971868 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1158144452962452317, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &403438205
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,6 +7527,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1612728708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8550550662341345844, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1612728712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612728708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842a0ce9daca1b843bf13959df4f615c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLoops:
+  - {fileID: 8300000, guid: 1687612fa336147439eee09232896519, type: 3}
+  - {fileID: 8300000, guid: ba1642feec4b21f44840ba329ce3d4ec, type: 3}
+  - {fileID: 8300000, guid: 3cde3ce36e38c8948b1e9f2583a9ad5b, type: 3}
+  - {fileID: 8300000, guid: 1d0556d8e4356184b8df095352e7dfc7, type: 3}
+  - {fileID: 8300000, guid: 81483ce60c49f314a80081428504b037, type: 3}
+  source: {fileID: 400971868}
 --- !u!1 &1620584499
 GameObject:
   m_ObjectHideFlags: 0
@@ -9592,6 +9621,34 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fd15a801b066b4e47a0a23fa73dcca20, type: 2}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1612728712}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextSong
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Radio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523382549369971405, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5752047257824991537, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -9768,6 +9825,34 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.00004
       objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1612728712}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PowerButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Radio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874431685355770442, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8209575078479888377, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.097
@@ -9836,6 +9921,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7401313339499174670, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1209349361}
+    - targetCorrespondingSourceObject: {fileID: 8550550662341345844, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1612728712}
   m_SourcePrefab: {fileID: 100100000, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
 --- !u!4 &5465821063531272272 stripped
 Transform:

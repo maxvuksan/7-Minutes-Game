@@ -13,7 +13,14 @@ public class HeadMovement : MonoBehaviour
     public static float rotationOffsetY;
 
     static bool disableMovement;
+    public Transform moon;
 
+
+    public bool followMoon = false;
+
+    public void SetFollowMoon(bool state){
+        this.followMoon = state;
+    }
 
 
     // used when panning
@@ -55,8 +62,34 @@ public class HeadMovement : MonoBehaviour
 
     void Update()
     {
-        HandleHeadMovement();
+
+        if(followMoon){
+            RotateTowardsMoon();
+        }
+        else {
+            HandleHeadMovement();
+        }
     }
+
+void RotateTowardsMoon()
+{
+    // Calculate the direction from the camera to the moon
+    Vector3 directionToMoon = moon.position - transform.position;
+
+    // Calculate the target rotation to face the moon
+    Quaternion targetRotation = Quaternion.LookRotation(directionToMoon);
+
+    // Apply a rotation offset (adjust this value to rotate around specific axes)
+    float rotationOffsetAngleX = -14f; // Rotation around X-axis (vertical offset)
+
+    // Apply the offsets as Euler angles
+    targetRotation *= Quaternion.Euler(rotationOffsetAngleX, 0, 0f);
+
+    // Smoothly rotate towards the moon with the offset
+    float rotationSpeed = 100f; // Adjust this value to control how fast the camera rotates
+    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+}
+
 
     void HandleHeadMovement(){
 

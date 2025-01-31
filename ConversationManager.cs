@@ -24,14 +24,20 @@ public class ConversationManager : MonoBehaviour
 
     public RectTransform background;
 
+    public bool playOnAwake;
+    public bool resizeBackground = true;
+
 
 
     void Start(){
         HideText();
     }
 
-    void Update(){
+    public void Play() {
+        playOnAwake = true;
+    }
 
+    void Update(){
         if(!playingSequence){
 
             lineIndex = 0;
@@ -43,6 +49,8 @@ public class ConversationManager : MonoBehaviour
             
         }
         else{
+            if (!playOnAwake) return;
+
             characterDelayTracked += Time.deltaTime;
 
             
@@ -66,6 +74,7 @@ public class ConversationManager : MonoBehaviour
     void Step(){
         
         if(burstIndex == 0 && charIndex == 0){
+            
             currentLine = "<color=#" + ColorUtility.ToHtmlStringRGB(activeSequence.lines[lineIndex].bursts[burstIndex].dialogueColor) + ">";
         }
 
@@ -97,14 +106,21 @@ public class ConversationManager : MonoBehaviour
         }
 
         outputLine.text = currentLine;
+        Canvas.ForceUpdateCanvases();
+
+        if (!resizeBackground) return;
 
         Vector2 textSize = outputLine.GetRenderedValues(true);
         background.sizeDelta = new Vector2(textSize.x + 50f, textSize.y + 30f);
     }
 
     private void HideText() {
+        if (resizeBackground)
+            background.sizeDelta = Vector2.zero;
+        
         background.gameObject.SetActive(false);
         outputLine.gameObject.SetActive(false);
+        
     }
 
     private void ShowText() {

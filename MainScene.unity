@@ -6644,7 +6644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412bcf36aa51c4f4793e638a385e4369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 38
+  time: 39
   text: {fileID: 1787707183}
 --- !u!1 &1069817153 stripped
 GameObject:
@@ -9381,7 +9381,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 130797168701466056, guid: 4420c1aebfb65f3428268cdf65b312a9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4420c1aebfb65f3428268cdf65b312a9, type: 3}
@@ -9700,6 +9701,10 @@ PrefabInstance:
     - target: {fileID: 2480135945945361379, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564608796665903796, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_text
+      value: 09:39
       objectReference: {fileID: 0}
     - target: {fileID: 2564608796665903796, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_fontAsset
@@ -10095,7 +10100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570779580494696935, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9855124
+      value: -1.892
       objectReference: {fileID: 0}
     - target: {fileID: 7570779580494696935, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalPosition.z

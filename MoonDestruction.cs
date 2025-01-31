@@ -11,9 +11,6 @@ public class MoonDestruction : MonoBehaviour
 
     private void Update(){
 
-        if(Input.GetKeyDown(KeyCode.I)){
-            Detonate();
-        }
     }
 
     public void Detonate(){

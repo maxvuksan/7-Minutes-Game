@@ -1,16 +1,26 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    public float time = 38;
+    private float timePassed;
+    public TextMeshProUGUI text;
+
+
+    private void Update() {
+        timePassed += Time.deltaTime;
+        if (timePassed >= 60) {
+            UpdateText();
+            timePassed = 0;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void UpdateText() {
+        time++;
+        text.text = "09:" + time;
     }
+
+
 }

@@ -6469,6 +6469,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016083778}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1053912167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2625484937040119486, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1053912169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053912167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412bcf36aa51c4f4793e638a385e4369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 38
+  text: {fileID: 1787707183}
 --- !u!1 &1069817153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5426210238645479993, guid: fc90fc7db12d39e449558ea136e3303c, type: 3}
@@ -7774,6 +7793,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660276809}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1787707183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2564608796665903796, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+  m_PrefabInstance: {fileID: 5465821063531272271}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865485954
 GameObject:
   m_ObjectHideFlags: 0
@@ -9497,6 +9527,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3695948706624480147, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4001079394106615697, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: distanceFromCamera
       value: 0.25
@@ -9659,6 +9693,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752047257824991537, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857641990015379573, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884420981189050466, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884420981189050466, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162774889409408119, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
@@ -9893,17 +9939,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inspectable Arm
       objectReference: {fileID: 0}
+    - target: {fileID: 8911180077970788235, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: label
       value: Respond (End Fishing)
       objectReference: {fileID: 0}
     - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1069817160}
     - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisableEnding
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoonCrash, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032125351976045424, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      propertyPath: onInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5132160387642900606, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
@@ -9924,6 +9994,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8550550662341345844, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612728712}
+    - targetCorrespondingSourceObject: {fileID: 2625484937040119486, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1053912169}
   m_SourcePrefab: {fileID: 100100000, guid: dfa69ffd97a67ec4f880039c32e52129, type: 3}
 --- !u!4 &5465821063531272272 stripped
 Transform:

@@ -15,6 +15,7 @@ public class Crosshair : MonoBehaviour
 
     public Sprite[] crosshairSprites;
     private ControlPointTracker controlPointTracker;
+
     Type type;
 
     void Awake(){
@@ -33,6 +34,11 @@ public class Crosshair : MonoBehaviour
 
     public void Update(){
         
+        if(controlPointTracker == null)
+        {
+            return;
+        }
+
         if(controlPointTracker.IsMouseHoveringControlPoint()){
             GetComponentInChildren<UnityEngine.UI.Image>().sprite = crosshairSprites[(int)Type.POINTER];
         }

@@ -7,6 +7,8 @@ public class MoonCrash : MonoBehaviour
     public HeadMovement cameraScript;
 
     public GameObject canvas;
+    public GameObject particleSystem;
+    public GameObject textObject;
 
     private void Awake() {
         canvas.SetActive(false);
@@ -19,7 +21,14 @@ public class MoonCrash : MonoBehaviour
     }
 
     public void PlayEnding() {
+        AudioManager.Singleton.Play("Explosion");
+        particleSystem.SetActive(true);
         canvas.SetActive(false);
         
+    }
+
+    public void EndGame() {
+        textObject.SetActive(false);
+        canvas.SetActive(true);
     }
 }

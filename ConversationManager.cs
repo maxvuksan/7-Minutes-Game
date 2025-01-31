@@ -26,6 +26,7 @@ public class ConversationManager : MonoBehaviour
 
     public bool playOnAwake;
     public bool resizeBackground = true;
+    public bool hideBackground = true;
 
 
 
@@ -118,7 +119,8 @@ public class ConversationManager : MonoBehaviour
         if (resizeBackground)
             background.sizeDelta = Vector2.zero;
         
-        background.gameObject.SetActive(false);
+        if (hideBackground)
+            background.gameObject.SetActive(false);
         outputLine.gameObject.SetActive(false);
         
     }
